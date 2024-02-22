@@ -56,6 +56,8 @@ body {
 .detail-sec {
     background-color: var(--White);
     padding: 1.5rem 2rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
     
 }
 .tag-name {
