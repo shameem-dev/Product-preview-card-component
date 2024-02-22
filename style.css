@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+
+    /*---------COLORS---------*/
+    --Darkcyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+
+
+    /* Fonts */
+    --montserrat-ff: "Montserrat", sans-serif;
+    --fraunces-ff: "Fraunces", serif;
+}
+body {
+    background-color: var(--Cream);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 630px;
+    width: 100%;
+    max-height: 460px;
+    height: 100%;
+    margin-top: 5em;
+    border-radius: 16px;
+    
+
+}
+.desktop {
+    max-height: 460px;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+.mobile {
+    display: none;
+    max-height: 460px;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+.detail-sec {
+    background-color: var(--White);
+    padding: 1.5rem 2rem;
+    
+}
+.tag-name {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: var(--montserrat-ff);
+    color: var(--Very-dark-blue);
+    
+}
+.perfume-name {
+    font-family: var(--fraunces-ff);
+    padding: 1rem 0;
+    font-weight: 800;
+}
+.product-description {
+    font-family: var(--montserrat-ff);
+    line-height: 24px;
+    
+}
+.price-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0 ;
+}
+.last-price {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: var(--fraunces-ff);
+    color: var(--Darkcyan);
+
+}
+.cut-price {
+    font-family: var(--fraunces-ff);
+    font-size: 1rem;
+    text-decoration: line-through;
+    padding-left: 8px;
+
+}
+.cart {
+    width: 100%;
+}
+.cart button{
+    padding: 1rem;
+    background-color: var(--Darkcyan);
+    border: 0;
+    outline: 0;
+    color: var(--White);
+    width: 100%;
+    border-radius: 0.5rem;
+    margin: 1rem 0 ;
+}
+.cart button:hover {
+    background-color: hsl(159, 33%, 20%);
+    cursor: pointer;
+} 
+.cart button img {
+    padding-right: 0.3rem;
+}
+@media screen and (max-width:375px){
+
+    .mobile {
+        display: flex;
+    }
+    .desktop {
+        display: none;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
